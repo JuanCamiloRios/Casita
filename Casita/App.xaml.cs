@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace Casita
 {
     public partial class App : Application
@@ -11,7 +12,12 @@ namespace Casita
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var NavigationPage = new NavigationPage(new MainPage());
+            var color = "#ff0000";
+            NavigationPage.BarBackgroundColor = Color.FromHex(color);
+            NavigationPage.BarTextColor = Color.White;
+            MainPage = NavigationPage;
+
         }
 
         protected override void OnStart()

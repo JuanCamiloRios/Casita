@@ -156,4 +156,7 @@
       <Name>Casita</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LA CASITA ELEGANTE.jpg" />
+  </ItemGroup>
 </Project>
